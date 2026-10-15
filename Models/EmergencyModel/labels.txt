@@ -1,0 +1,5 @@
+0 Breathless
+1 Cold
+2 Cough
+3 Help
+4 Vomit

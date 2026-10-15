@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignMed - Sign Language Emergency Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-hands-helping"></i></div>
+          <span>SignMed</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="/test" class="nav-cta"
+          >Launch App <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> AI-Powered . Real-Time
+        </div>
+        <h1 class="hero-title">
+          Breaking<br /><span class="accent">Communication</span><br />Barriers
+        </h1>
+        <p class="hero-subtitle">
+          Real-time sign language to text translation<br />designed for
+          emergency medical care.
+        </p>
+        <div class="hero-buttons">
+          <a href="/test" class="btn btn-primary">
+            <i class="fas fa-camera"></i> Start Translation
+          </a>
+          <a href="#features" class="btn btn-ghost">
+            <i class="fas fa-info-circle"></i> Learn More
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>5</strong><span>Signs</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>80%+</strong><span>Confidence</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>Live</strong><span>Real-Time</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hand-card">
+          <div class="hand-ring ring-1"></div>
+          <div class="hand-ring ring-2"></div>
+          <div class="hand-ring ring-3"></div>
+          <div class="hand-icon-wrap">
+            <i class="fas fa-hand-paper"></i>
+          </div>
+          <div class="hand-label">
+            <span class="label-dot"></span> Detecting sign...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Capabilities</div>
+          <h2 class="section-title">Built for critical moments</h2>
+          <p class="section-sub">
+            Every feature designed to help when it matters most.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #3b82f6">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Real-Time Detection</h3>
+            <p>
+              Live video feed with instant sign language recognition powered by
+              AI models trained on emergency vocabulary.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #8b5cf6">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3>Accurate Translation</h3>
+            <p>
+              High-precision translation of hand gestures into meaningful
+              medical sentences with confidence scoring.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #06b6d4">
+              <i class="fas fa-volume-up"></i>
+            </div>
+            <h3>Text-to-Speech</h3>
+            <p>
+              Automatic voice output using Web Speech API so medical staff can
+              hear the patients communication clearly.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #10b981">
+              <i class="fas fa-hospital-user"></i>
+            </div>
+            <h3>Medical Focused</h3>
+            <p>
+              Trained specifically on emergency medical signs: Breathless, Cold,
+              Cough, Help, Vomit.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #f59e0b">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Confidence Metrics</h3>
+            <p>
+              Visual accuracy bar shows confidence level so staff can make
+              informed decisions about the output.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrap" style="--c: #ef4444">
+              <i class="fas fa-wheelchair"></i>
+            </div>
+            <h3>Accessibility First</h3>
+            <p>
+              Designed specifically for people with hearing and speech
+              disabilities in high-pressure environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNS SHOWCASE -->
+    <section class="signs-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Vocabulary</div>
+          <h2 class="section-title">Supported emergency signs</h2>
+        </div>
+        <div class="signs-grid">
+          <div class="sign-chip"><i class="fas fa-lungs"></i> Breathless</div>
+          <div class="sign-chip"><i class="fas fa-snowflake"></i> Cold</div>
+          <div class="sign-chip">
+            <i class="fas fa-head-side-cough"></i> Cough
+          </div>
+          <div class="sign-chip"><i class="fas fa-hand-paper"></i> Help</div>
+          <div class="sign-chip"><i class="fas fa-dizzy"></i> Vomit</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-card-stack">
+              <div class="about-card ac-1">
+                <i class="fas fa-sign-language"></i>
+                <span>Sign Detected</span>
+                <strong>Help</strong>
+              </div>
+              <div class="about-card ac-2">
+                <i class="fas fa-comment-medical"></i>
+                <span>Translation</span>
+                <strong>"I need help."</strong>
+              </div>
+              <div class="about-card ac-3">
+                <i class="fas fa-check-circle"></i>
+                <span>Confidence</span>
+                <strong>94.7%</strong>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-block">
+            <div class="section-tag">About</div>
+            <h2 class="section-title">Why SignMed exists</h2>
+            <p>
+              Many people with hearing and speech disabilities rely on sign
+              language, yet medical professionals often lack the training to
+              understand it. This creates dangerous barriers during emergencies.
+            </p>
+            <p>
+              SignMed bridges that gap — translating signs in real-time so
+              doctors, nurses, and first responders can understand patients
+              instantly.
+            </p>
+            <a href="/test" class="btn btn-primary" style="margin-top: 2rem">
+              <i class="fas fa-play"></i> Try It Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-bg-blob"></div>
+          <h2>Ready to help someone?</h2>
+          <p>Open the real-time translator and start communicating.</p>
+          <a href="/test" class="btn btn-white btn-large">
+            <i class="fas fa-camera"></i> Open Translator
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <div class="logo-icon"><i class="fas fa-hands-helping"></i></div>
+          <span>SignMed</span>
+        </div>
+        <p class="footer-copy">
+          &copy; 2024 SignMed · Breaking Communication Barriers
+        </p>
+        <p class="footer-sub">
+          Designed to empower and protect the disabled community.
+        </p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='JS/home.js') }}"></script>
+  </body>
+</html>
