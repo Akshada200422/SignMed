@@ -1,4 +1,4 @@
-# SignMed — Sign Language convertor for Doctors and Patients
+# SignMed — Sign Language Convertor for Doctors and Patients
 
 Real-time sign language to text translation for medical care.
 
