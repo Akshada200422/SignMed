@@ -94,12 +94,6 @@ To collect new training images, run:
 ```bash
 python dataCollection.py
 ```
-
-- Change the `folder` variable at the top to the word you're collecting.
-- Show **both hands** in frame.
-- Press **S** to save an image.
-- Press **Q** to quit.
-
 ---
 
 ## Notes
