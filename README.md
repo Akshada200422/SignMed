@@ -1,6 +1,6 @@
-# SignMed — Sign Language Emergency Translator
+# SignMed — Sign Language convertor for Doctors and Patients
 
-Real-time sign language to text translation for emergency medical care.
+Real-time sign language to text translation for medical care.
 
 ---
 
